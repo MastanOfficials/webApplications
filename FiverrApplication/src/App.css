@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+  background-color: rgb(46, 69, 13);
+  color: white;
+  transition: 0.5sec all ease;
+  position: sticky;
+  top: 0px;
+  z-index: 100 ;
+}
+.navbars{
+    position: sticky;
+    top: 0px;
+    z-index: 100 ;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+}
+.Navbar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(254, 254, 254);
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  position: sticky;
+}
+.nav-items > div {
+  font-weight: 600;
+}
+.navbar-items {
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  gap: 53px;
+  align-items: center;
+  position: sticky;
+}
+.hr {
+  margin-top: -8px;
+}
+.button-join{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 196, 0);
+    padding:10px 15px 10px 15px;
+    border-radius: 10px;
+    cursor:pointer;
+    border-color:  rgb(255, 196, 0);
+}
+.button-join:hover{
+    border-color: white;
+}
