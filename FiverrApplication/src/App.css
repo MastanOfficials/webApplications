@@ -46,7 +46,8 @@
   position: sticky;
 }
 .hr {
-  margin-top: -8px;
+  margin-top: -1px;
+  box-shadow: inset 10px black;
 }
 .button-join{
     color: rgb(0, 0, 0);
@@ -58,4 +59,34 @@
 }
 .button-join:hover{
     border-color: white;
+}
+.usericon{
+  border-radius: 50%;
+}
+.user-icons{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+ position: relative;
+ cursor: pointer;
+
+}
+.options{
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  padding: 15px;
+  background-color: white;
+  color: gray;
+  border-radius: 10px;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.Link{
+text-decoration: none;
+color: inherit;
 }
