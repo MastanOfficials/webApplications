@@ -1,0 +1,70 @@
+.features{
+height: 600px;
+display: flex;
+flex-direction:column;
+align-items: center;
+background-color: rgb(46, 69, 13);
+color: white;
+}
+.features >.container{
+display: flex;
+
+}
+.container > .left{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px;
+    padding-left: 30px;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px white;
+    width: 740px;
+}
+.search > .serachInput{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.serachInput > img{
+    width: 20px;
+    padding: 5px;
+    height: 20px;
+    margin: 10px;
+}
+.serachInput > input{
+    border: none;
+    outline: none;
+}
+.search>button{
+    width: 120px;
+    height: 50px;
+    /* padding: 20px */
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    font-size: medium;
+    cursor: pointer;
+}
+.left > .popular{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+
+}
+.popular > button{
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid white;
+}

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
-  const [open,setOpen]=useState(false)
-  const {pathname}=useLocation();
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
@@ -21,9 +22,14 @@ const Navbar = () => {
   return (
     <>
       <div className="navbars">
-        <div className={active || pathname !== "/" ? "Navbar active" : "navbar"}>
-          <div >
-           <Link to="/" className="Link" > <h1> Some Website</h1></Link>
+        <div
+          className={active || pathname !== "/" ? "Navbar active" : "navbar"}
+        >
+          <div>
+            <Link to="/" className="Link">
+              {" "}
+              <h1> Some Website</h1>
+            </Link>
           </div>
           <div className="nav-items">
             <div>Our Business</div>
@@ -38,40 +44,79 @@ const Navbar = () => {
               </div>
             )}
 
-            {currentUser && (<div className="user-icons" onClick={()=>setOpen(!open)}>
-               <img src='https://w7.pngwing.com/pngs/886/300/png-transparent-user-other-furniture-child-thumbnail.png' alt=""className="usericon" width="30px" height
-               ="30px" />
-               <div>{currentUser?.username}</div>
-              { open &&    <div className="options">
-                {
-                  currentUser?.isSeller && <>
-                 <Link className="Link"  to="/mygigs">Gigs</Link >
-                 <Link  className="Link" to="/add">Add New Gigs</Link >
-                  </>
-                }
-                <Link className="Link"  to="/orders">Orders</Link >
-                <Link  className="Link" to="/messages">Messages</Link >
-                <Link className="Link"  to="/">Logout</Link >
-               </div>}
-               </div>)}
+            {currentUser && (
+              <div className="user-icons" onClick={() => setOpen(!open)}>
+                <img
+                  src="https://w7.pngwing.com/pngs/886/300/png-transparent-user-other-furniture-child-thumbnail.png"
+                  alt=""
+                  className="usericon"
+                  width="30px"
+                  height="30px"
+                />
+                <div>{currentUser?.username}</div>
+                {open && (
+                  <div className="options">
+                    {currentUser?.isSeller && (
+                      <>
+                        <Link className="Link" to="/mygigs">
+                          Gigs
+                        </Link>
+                        <Link className="Link" to="/add">
+                          Add New Gigs
+                        </Link>
+                      </>
+                    )}
+                    <Link className="Link" to="/orders">
+                      Orders
+                    </Link>
+                    <Link className="Link" to="/messages">
+                      Messages
+                    </Link>
+                    <Link className="Link" to="/">
+                      Logout
+                    </Link>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
-        {(active || pathname !=="/") ? (
+        {active || pathname !== "/" ? (
           <div>
             <hr className="hr" />
             <div className="navbar-items">
-              <div>Graphics & Design</div>
-              <div>Video & animation</div>
-              <div>Writing & Translation</div>
-              <div>AI Services</div>
-              <div>Digital Marketing</div>
-              <div>Music & Audio</div>
-              <div>Programming & Tech</div>
-              <div>Business</div>
-              <div>LifeStyle</div>
+              <Link className="Link" to="/">
+                Graphics & Design
+              </Link>
+              <Link className="Link" to="/">
+                Video & animation
+              </Link>
+              <Link className="Link" to="/">
+                Writing & Translation
+              </Link>
+              <Link className="Link" to="/">
+                AI Services
+              </Link>
+              <Link className="Link" to="/">
+                Digital Marketing
+              </Link>
+              <Link className="Link" to="/">
+                Music & Audio
+              </Link>
+              <Link className="Link" to="/">
+                Programming & Tech
+              </Link>
+              <Link className="Link" to="/">
+                Business
+              </Link>
+              <Link className="Link" to="/">
+                LifeStyle
+              </Link>
             </div>
+            <hr className="hr" />
           </div>
+          
         ) : null}
       </div>
     </>
