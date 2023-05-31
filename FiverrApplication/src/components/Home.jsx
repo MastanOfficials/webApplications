@@ -11,12 +11,11 @@ const Home = () => {
       <Features />
       <TrustedBy />
       <Slide slidesToShow={5} arrowsScroll={5}>
-        {cards?.map((cards) => {
+        {cards?.map(cards => 
           <>
-            console.log(cards);
             <CatCard key={cards?.id} items={cards} />
-          </>;
-        })}
+          </>
+        )}
       </Slide>
     </div>
   );
