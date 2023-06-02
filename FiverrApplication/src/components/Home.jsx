@@ -4,6 +4,8 @@ import CatCard from "./catcard/CatCard";
 import Features from "./features/Features";
 import Slide from "./slide/Slide";
 import TrustedBy from "./trustedby/TrustedBy";
+import "../components/catcard/CatCard.css"
+import ColorPicker from "./ColorPicker";
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
           </>
         )}
       </Slide>
+      <ColorPicker/>
     </div>
   );
 };

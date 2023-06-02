@@ -28,7 +28,7 @@ const Navbar = () => {
           <div>
             <Link to="/" className="Link">
               {" "}
-              <h1> Some Website</h1>
+              <h1> Mastan </h1>
             </Link>
           </div>
           <div className="nav-items">

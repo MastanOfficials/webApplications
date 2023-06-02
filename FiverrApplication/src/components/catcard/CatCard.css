@@ -25,3 +25,8 @@ top:15px;
 left: 20px;
 right: 40px;
 }
+Slide{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
