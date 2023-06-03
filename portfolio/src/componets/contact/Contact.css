@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.inputfilds {
+  border: 2px solid black;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: rgb(172, 169, 169) 10px 10px 5px;
+
+}
+.elements {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.elements > input {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+}
+.elements > select {
+  width: 408px;
+  height: 30px;
+  font-weight: 500;
+}
+select > option {
+  font-weight: 500;
+}
+.elements > span {
+  font-weight: 500;
+  font-size: large;
+}
+.contactTitle {
+  display: flex;
+  justify-content: center;
+}
+.inputTag,
+.textareaTag {
+  padding-left: 3%;
+  font-size: medium;
+  border-radius: 10px;
+}
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.btn-container button {
+  font-size: medium;
+  padding: 10px;
+  background-color: rgb(255, 191, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-container button:hover{
+    background-color: rgb(154, 103, 202);
+    color:white
+}
